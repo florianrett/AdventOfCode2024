@@ -128,6 +128,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AdventOfCode2024.cpp" />
+    <ClCompile Include="BaseSolver.cpp" />
+    <ClCompile Include="Day01.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseSolver.h" />
+    <ClInclude Include="Day01.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="PuzzleInput.txt" />
+    <Text Include="TestInput.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

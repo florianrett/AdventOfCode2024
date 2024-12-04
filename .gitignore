@@ -37,3 +37,7 @@ AdventOfCode2024/.vs
 # Intermediate and Build output directories
 AdventOfCode2024/x64
 AdventOfCode2024/AdventOfCode2024/x64
+
+# Puzzle Input files
+AdventOfCode2024/TestInput.txt
+AdventOfCode2024/PuzzleInput.txt
