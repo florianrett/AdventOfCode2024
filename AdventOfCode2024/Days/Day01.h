@@ -1,5 +1,5 @@
 #pragma once
-#include "BaseSolver.h"
+#include "../BaseSolver.h"
 
 class Day01 : public BaseSolver
 {

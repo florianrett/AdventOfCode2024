@@ -1,7 +1,7 @@
 #pragma once
-#include "BaseSolver.h"
+#include "../BaseSolver.h"
 
-class Day02 : public BaseSolver
+class Day25 : public BaseSolver
 {
 public:
 	int SolvePart1() override;

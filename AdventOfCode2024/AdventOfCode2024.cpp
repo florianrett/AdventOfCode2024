@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include "BaseSolver.h"
-#include "Day01.h"
+#include "Days/Day01.h"
 
 int main()
 {
