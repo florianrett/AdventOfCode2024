@@ -30,3 +30,10 @@
 *.exe
 *.out
 *.app
+
+# Visual Studio config folder
+AdventOfCode2024/.vs
+
+# Intermediate and Build output directories
+AdventOfCode2024/x64
+AdventOfCode2024/AdventOfCode2024/x64
