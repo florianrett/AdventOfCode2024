@@ -13,7 +13,7 @@ class BaseSolver abstract
 public:
 	BaseSolver();
 
-	~BaseSolver();
+	virtual ~BaseSolver();
 
 	virtual void ReadInput(bool bUseTestInput = false);
 
