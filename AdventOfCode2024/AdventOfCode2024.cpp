@@ -3,13 +3,13 @@
 
 #include <iostream>
 #include "BaseSolver.h"
-#include "Days/Day02.h"
+#include "Days/Day03.h"
 
 int main()
 {
     bool bUseTestInput = false;
 
-    BaseSolver* Solver = new Day02();
+    BaseSolver* Solver = new Day03();
 
     Solver->ReadInput(bUseTestInput);
     int part1 = Solver->SolvePart1();
