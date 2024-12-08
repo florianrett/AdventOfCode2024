@@ -2,19 +2,28 @@
 //
 
 #include <iostream>
+#include <chrono>
 #include "BaseSolver.h"
-#include "Days/Day05.h"
+#include "Days/Day06.h"
 
 int main()
 {
     bool bUseTestInput = false;
 
-    BaseSolver* Solver = new Day05();
+    BaseSolver* Solver = new Day06();
 
+    chrono::high_resolution_clock::time_point StartTime = chrono::high_resolution_clock::now();
     Solver->ReadInput(bUseTestInput);
     int part1 = Solver->SolvePart1();
+    chrono::high_resolution_clock::time_point StartTime2 = chrono::high_resolution_clock::now();
     int part2 = Solver->SolvePart2();
+    chrono::high_resolution_clock::time_point EndTime = chrono::high_resolution_clock::now();
 
-    std::cout << "Puzzle Solutions are:\nPart 1: " << part1 << "\nPart 2: " << part2 << std::endl;
+    string Solutions = format("Puzzle Solutions are:\n"
+                        "Part 1: {} ({})\n"
+                        "Part 2: {} ({})\n",
+                        part1, chrono::duration<float>( StartTime2 - StartTime), part2, chrono::duration<float>(EndTime - StartTime2));
+
+    std::cout << Solutions;
 }
 
