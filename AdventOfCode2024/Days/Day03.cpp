@@ -1,7 +1,7 @@
 #include "Day03.h"
 #include <regex>
 
-int Day03::SolvePart1()
+string Day03::SolvePart1()
 {
 	int result = 0;
 	for (string line : Input)
@@ -16,10 +16,10 @@ int Day03::SolvePart1()
 			result += n1 * n2;
 		}
 	}
-	return result;
+	return to_string(result);
 }
 
-int Day03::SolvePart2()
+string Day03::SolvePart2()
 {
 	int result = 0;
 	bool isEnabled = true;
@@ -54,5 +54,5 @@ int Day03::SolvePart2()
 			line = match.suffix();
 		}
 	}
-	return result;
+	return to_string(result);
 }

@@ -28,12 +28,12 @@ void BaseSolver::ReadInput(bool bUseTestInput)
 	}	
 }
 
-int BaseSolver::SolvePart1()
+string BaseSolver::SolvePart1()
 {
-	return 0;
+	return "";
 }
 
-int BaseSolver::SolvePart2()
+string BaseSolver::SolvePart2()
 {
-	return 0;
+	return "";
 }

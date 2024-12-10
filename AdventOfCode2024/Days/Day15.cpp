@@ -1,11 +1,11 @@
 #include "Day15.h"
 
-int Day15::SolvePart1()
+string Day15::SolvePart1()
 {
-	return 0;
+	return "";
 }
 
-int Day15::SolvePart2()
+string Day15::SolvePart2()
 {
-	return 0;
+	return "";
 }

@@ -23,7 +23,7 @@ void Day06::ReadInput(bool bUseTestInput)
 	}
 }
 
-int Day06::SolvePart1()
+string Day06::SolvePart1()
 {
 	unordered_set<int> Visited;
 	int currentX = GuardX;
@@ -57,7 +57,7 @@ int Day06::SolvePart1()
 		}
 	}
 	
-	return Visited.size();
+	return to_string(Visited.size());
 }
 
 typedef pair<int, int> DirType;
@@ -70,7 +70,7 @@ struct state_hash
 	}
 };
 
-int Day06::SolvePart2()
+string Day06::SolvePart2()
 {
 	int numPossibleObstacles = 0;
 	// New obstacle must be on guard's path to affect her and create a loop
@@ -120,5 +120,5 @@ int Day06::SolvePart2()
 			}
 		}
 	}
-	return numPossibleObstacles;
+	return to_string(numPossibleObstacles);
 }

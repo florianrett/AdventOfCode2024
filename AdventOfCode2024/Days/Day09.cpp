@@ -1,11 +1,11 @@
 #include "Day09.h"
 
-int Day09::SolvePart1()
+string Day09::SolvePart1()
 {
-	return 0;
+	return "";
 }
 
-int Day09::SolvePart2()
+string Day09::SolvePart2()
 {
-	return 0;
+	return "";
 }

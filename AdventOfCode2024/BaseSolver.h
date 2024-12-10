@@ -17,9 +17,9 @@ public:
 
 	virtual void ReadInput(bool bUseTestInput = false);
 
-	virtual int SolvePart1();
+	virtual string SolvePart1();
 
-	virtual int SolvePart2();
+	virtual string SolvePart2();
 
 protected:
 	vector<string> Input;

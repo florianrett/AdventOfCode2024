@@ -5,8 +5,8 @@ class Day06 : public BaseSolver
 {
 public:
 	void ReadInput(bool bUseTestInput) override;
-	int SolvePart1() override;
-	int SolvePart2() override;
+	string SolvePart1() override;
+	string SolvePart2() override;
 
 private:
 	int Width = 0;

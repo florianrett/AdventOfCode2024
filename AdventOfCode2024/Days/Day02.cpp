@@ -1,7 +1,7 @@
 #include "Day02.h"
 #include <regex>
 
-int Day02::SolvePart1()
+string Day02::SolvePart1()
 {
 	regex numbers("[0-9]+");
 	for (string line : Input)
@@ -22,10 +22,10 @@ int Day02::SolvePart1()
 			numSafe++;
 	}
 
-	return numSafe;
+	return to_string(numSafe);
 }
 
-int Day02::SolvePart2()
+string Day02::SolvePart2()
 {
 	int numSafe = 0;
 	for (vector<int> report : Data)
@@ -48,7 +48,7 @@ int Day02::SolvePart2()
 			}
 		}
 	}
-	return numSafe;
+	return to_string(numSafe);
 }
 
 vector<int> Day02::GenerateDeltas(vector<int> report)

@@ -4,8 +4,8 @@
 class Day02 : public BaseSolver
 {
 public:
-	int SolvePart1() override;
-	int SolvePart2() override;
+	string SolvePart1() override;
+	string SolvePart2() override;
 
 private:
 	vector<int> GenerateDeltas(vector<int> report);

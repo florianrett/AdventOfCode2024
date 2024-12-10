@@ -4,8 +4,8 @@
 class Day01 : public BaseSolver
 {
 public:
-	int SolvePart1() override;
-	int SolvePart2() override;
+	string SolvePart1() override;
+	string SolvePart2() override;
 
 private:
 	vector<int> leftColumn;

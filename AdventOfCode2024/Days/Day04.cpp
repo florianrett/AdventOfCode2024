@@ -8,7 +8,7 @@ void Day04::ReadInput(bool bUseTestInput)
 	numColumns = Input[0].length();
 }
 
-int Day04::SolvePart1()
+string Day04::SolvePart1()
 {
 	int numXmas = 0;
 	for (int y = 0; y < numRows; ++y)
@@ -49,10 +49,10 @@ int Day04::SolvePart1()
 			}
 		}
 	}
-	return numXmas;
+	return to_string(numXmas);
 }
 
-int Day04::SolvePart2()
+string Day04::SolvePart2()
 {
 	int numXmas = 0;
 	for (int y = 0; y < numRows; ++y)
@@ -65,7 +65,7 @@ int Day04::SolvePart2()
 			}
 		}
 	}
-	return numXmas;
+	return to_string(numXmas);
 }
 
 bool Day04::IsValidIndex(int row, int column)

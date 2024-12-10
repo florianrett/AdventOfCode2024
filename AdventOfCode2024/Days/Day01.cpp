@@ -1,6 +1,6 @@
 #include "Day01.h"
 
-int Day01::SolvePart1()
+string Day01::SolvePart1()
 {
 	for (string line : Input)
 	{
@@ -22,10 +22,10 @@ int Day01::SolvePart1()
 		difference += abs(leftColumn[i] - rightColumn[i]);
 	}
 
-    return difference;
+    return to_string(difference);
 }
 
-int Day01::SolvePart2()
+string Day01::SolvePart2()
 {
 	unordered_map<int, int> Counter;
 	for (int i : rightColumn)
@@ -38,5 +38,5 @@ int Day01::SolvePart2()
 		similarityScore += i * Counter[i];
 	}
 
-    return similarityScore;
+    return to_string(similarityScore);
 }

@@ -4,19 +4,19 @@
 #include <iostream>
 #include <chrono>
 #include "BaseSolver.h"
-#include "Days/Day06.h"
+#include "Days/Day07.h"
 
 int main()
 {
     bool bUseTestInput = false;
 
-    BaseSolver* Solver = new Day06();
+    BaseSolver* Solver = new Day07();
 
     chrono::high_resolution_clock::time_point StartTime = chrono::high_resolution_clock::now();
     Solver->ReadInput(bUseTestInput);
-    int part1 = Solver->SolvePart1();
+    string part1 = Solver->SolvePart1();
     chrono::high_resolution_clock::time_point StartTime2 = chrono::high_resolution_clock::now();
-    int part2 = Solver->SolvePart2();
+    string part2 = Solver->SolvePart2();
     chrono::high_resolution_clock::time_point EndTime = chrono::high_resolution_clock::now();
 
     string Solutions = format("Puzzle Solutions are:\n"

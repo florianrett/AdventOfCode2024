@@ -43,7 +43,7 @@ void Day05::ReadInput(bool bUseTestInput)
 	// }
 }
 
-int Day05::SolvePart1()
+string Day05::SolvePart1()
 {
 	int sum = 0;
 	for (vector<int> update : Updates)
@@ -79,10 +79,10 @@ int Day05::SolvePart1()
 		}
 	}
 
-	return sum;
+	return to_string(sum);
 }
 
-int Day05::SolvePart2()
+string Day05::SolvePart2()
 {
 	int sum = 0;
 
@@ -118,5 +118,5 @@ int Day05::SolvePart2()
 		sum += middle;
 	}
 	
-	return sum;
+	return to_string(sum);
 }
