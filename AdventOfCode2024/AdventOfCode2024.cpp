@@ -4,13 +4,13 @@
 #include <iostream>
 #include <chrono>
 #include "BaseSolver.h"
-#include "Days/Day09.h"
+#include "Days/Day10.h"
 
 int main()
 {
     bool bUseTestInput = false;
 
-    BaseSolver* Solver = new Day09();
+    BaseSolver* Solver = new Day10();
 
     chrono::high_resolution_clock::time_point StartTime = chrono::high_resolution_clock::now();
     Solver->ReadInput(bUseTestInput);
