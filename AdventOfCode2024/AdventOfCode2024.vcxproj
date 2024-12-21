@@ -156,6 +156,7 @@
     <ClCompile Include="Days\Day23.cpp" />
     <ClCompile Include="Days\Day24.cpp" />
     <ClCompile Include="Days\Day25.cpp" />
+    <ClCompile Include="RegexHelper.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseSolver.h" />
@@ -184,6 +185,7 @@
     <ClInclude Include="Days\Day23.h" />
     <ClInclude Include="Days\Day24.h" />
     <ClInclude Include="Days\Day25.h" />
+    <ClInclude Include="RegexHelper.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="PuzzleInput.txt" />
